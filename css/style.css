@@ -72,20 +72,21 @@ ul{
 
 .photo{
     border-radius: 20px;
-    width: 286px;
+    width: 285px;
     height: 256px;
     margin-top: 9px;
     margin-left: 11px;
     background-image: url('../photo/rafu\ \(4\).jpg');
-    background-size: 285px 256px;
+    background-size: cover;
     animation: image 100s linear 1 ;
+    backface-visibility: hidden
 }
 
 
 @keyframes image{
 
     0%{
-        background-image: url('../photo/rafu\ \(4\).jpg');    
+        background-image: url('../photo/rafu\ \(4\).jpg') ;  
     }
     2%{
         background-image: url('../photo/rafu\ \(1\).jpg');  

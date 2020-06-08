@@ -1,42 +1,64 @@
 *{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
-
-
-/* #station{
-    background-color:whitesmoke;
-    padding: 50px 0;
+ul{
+    margin-top: 80px;
 }
-.stop{
-    color: white;
-    width: 300px;
+.wheel{
+    background-image: url(../photo/wheel.png);
+    background-position: 100px 100px;
+    width: 100px;
     height: 100px;
-    border-radius: 20px;
+    animation: wheel 1s linear 100 ;   
+}
+@keyframes wheel{
+    0%{transform: rotate(360deg);
+    }
+}
+#wheel1{
+    float: left;
+    margin-top: 20px;
+    margin-left: 95px;
+}
+#wheel2{
+    float: right;
+    margin-top: 16px;
+    margin-right:38px ;
+}
+
+.truck2{
+    color: white;
+    width: 500px;
+    height: 400px;
     position: relative;
-    background-color: #444 ;
-    box-shadow: 10px 5px 5px black;
-    animation-name: label;
-    animation-duration: 10s;
-    animation-delay: 1000ms;
-    animation-iteration-count: infinite;
-} */
-/* @keyframes label{
-    0%{left: 0px; }
-    25%{left: 200px;}
-    50%{left: 400px;}
-    75%{left: 600px;}
-} */
+    float: right;
+    background-image: url('../photo/truck3.png');
+    background-size: 500px 400px;
+    margin-top: 260px;
+} 
+#label{
+    width: 286px;
+    height: 256px;
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 30px;
+    margin-top: 9px;
+    margin-left: 11px;
+    text-align: center;
+    font: 2em sans-serif;
+}
+
 
 .city{
-    background: url('../photo/city.png');
+    background-image: url('../photo/city.png');
     background-size: 100vh 100vh;
     height: 100vh;
     position: relative;
-    animation: move 2s linear infinite;
+    animation: move 5s linear 20 ;
 }
 @keyframes move {
-    0%{background-position: right;}
+    0%{background-position: right;  }
     100%{background-position: left;}
 }
 .truck{
@@ -44,38 +66,186 @@
     bottom: 1vh;
     width: 500px;
     height: 400px;
-    background-image: url('../photo/truck1.png');
+    background-image: url('../photo/truck3.png');
     background-size: 500px 400px;
 }
+
 .photo{
     border-radius: 20px;
-    width: 285px;
-    height: 240px;
-    margin-top: 20px;
-    margin-left: 20px;
-    background-image: url('../photo/_20180425_230924.jpg');
-    background-size: 285px 240px;
-    animation-name: photo;
-    animation-duration: 5s;
-    animation-iteration-count:infinite;
+    width: 286px;
+    height: 256px;
+    margin-top: 9px;
+    margin-left: 11px;
+    background-image: url('../photo/rafu\ \(4\).jpg');
+    background-size: 285px 256px;
+    animation-name: image;
+    animation-duration: 100s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
 }
 
-
-@keyframes photo{
+@keyframes image{
 
     0%{
-        background-image: url('../photo/_20180425_230924.jpg' );  
+        background-image: url('../photo/rafu\ \(4\).jpg');    
     }
-    25%{
-         background-image: url('../photo/_20180824_221808.jpg');
+    2%{
+        background-image: url('../photo/rafu\ \(1\).jpg');  
     }
-   
-    50%{
-         background-image: url('../photo/_20180425_231552.jpg');  
+    4%{
+        background-image: url('../photo/rafu\ \(3\).jpg');  
+    }
+    6%{
+        background-image: url('../photo/rafu.jpg');  
+    }
+    8%{
+        background-image: url('../photo/rafu\ \(5\).jpg');  
     }
 
-    75%{
-        background-image: url('../photo/2017-11-02-15-54-38-718.jpg');
+    10%{
+        background-image: url('../photo/aus.jpg');  
     }
+    12%{
+        background-image: url('../photo/aus\ \(1\).jpg');  
+    }
+    14%{
+        background-image: url('../photo/aus\ \(2\).jpg');  
+    }
+    16%{
+        background-image: url('../photo/aus\ \(3\).jpg');  
+    }
+    18%{
+        background-image: url('../photo/aus\ \(5\).jpg');  
+    }
+    
+    20%{
+        background-image: url('../photo/IMG-20180518-WA0045.jpg');  
+    }
+    22%{
+        background-image: url('../photo/IMG-20180531-WA0036.jpg');  
+    }
+    24%{
+        background-image: url('../photo/IMG-20180518-WA0091.jpg');  
+    }
+    26%{
+        background-image: url('../photo/IMG-20180518-WA0077.jpg');  
+    }
+    28%{
+        background-image: url('../photo/IMG-20180518-WA0072.jpg');  
+    }
+
+    30%{
+        background-image: url('../photo/miraj\ \(1\).jpg');  
+    }
+    32%{
+        background-image: url('../photo/miraj\ \(2\).jpg');  
+    }
+    34%{
+        background-image: url('../photo/miraj\ \(3\).jpg');  
+    }
+    36%{
+        background-image: url('../photo/miraj\ \(4\).jpg');  
+    }
+    38%{
+        background-image: url('../photo/miraj\ \(5\).jpg');  
+    }
+
+    40%{
+        background-image: url('../photo/2018-02-09-15-11-54-848.jpg');  
+    }
+    42%{
+        background-image: url('../photo/2018-02-09-15-12-13-222.jpg');  
+    }
+    44%{
+        background-image: url('../photo/2018-02-09-15-12-35-657.jpg');  
+    }
+    46%{
+        background-image: url('../photo/2018-02-09-15-13-05-790.jpg');  
+    }
+    48%{
+        background-image: url('../photo/2018-02-19-16-02-07-460.jpg');  
+    }
+
+    50%{
+        background-image: url('../photo/fest\ \(1\).jpeg');  
+    }
+    52%{
+        background-image: url('../photo/fest\ \(2\).jpeg');  
+    }
+    54%{
+        background-image: url('../photo/fest\ \(3\).jpeg ')
+    }
+    56%{
+        background-image: url('../photo/fest\ \(4\)3.jpg');  
+    }
+    58%{
+        background-image: url('../photo/fest\ \(4\)3.jpg');  
+    }
+
+    60%{
+        background-image: url('../photo/dp\ bir\ \(1\).jpeg');  
+    }
+    62%{
+        background-image: url('../photo/dp\ bir\ \(2\).jpeg');  
+    }
+    64%{
+        background-image: url('../photo/dp\ bir\ \(3\).jpeg')  
+    }
+    66%{
+        background-image: url('../photo/dp\ bir\ \(4\).jpeg')  
+    }
+    68%{
+        background-image: url('../photo/dp\ bir\ \(5\).jpeg')  
+    }
+
+    70%{
+        background-image: url('../photo/diwali\ \(1\).jpeg');  
+    }
+    72%{
+        background-image: url('../photo/diwali\ \(2\).jpeg');  
+    }
+    74%{
+        background-image: url('../photo/diwali\ \(3\).jpeg');  
+    }
+    76%{
+        background-image: url('../photo/diwali\ \(4\).jpeg');  
+    }
+    78%{
+        background-image: url('../photo/diwali\ \(5\).jpeg');  
+    }
+
    
+
+    80%{
+        background-image: url('../photo/my\ birthday\ \(1\).jpeg')  
+    }
+    82%{
+        background-image: url('../photo/my\ birthday\ \(2\).jpeg')  
+    }
+    84%{
+        background-image: url('../photo/my\ birthday\ \(3\).jpeg')  
+    }
+    86%{
+        background-image: url('../photo/my\ birthday\ \(8\).jpeg')  
+    }
+    88%{
+        background-image: url('../photo/my\ birthday\ \(9\).jpeg')  
+    }
+
+
+    90%{
+        background-image: url('../photo/last\ \(1\).jpeg')   
+    }
+    92%{
+        background-image: url('../photo/last\ \(2\).jpeg')  
+    }
+    94%{
+        background-image: url('../photo/last\ \(3\).jpeg')  
+    }
+    96%{
+        background-image: url('../photo/last\ \(4\).jpeg')  
+    }
+    98%{
+        background-image: url('../photo/last\ \(5\).jpeg')
+    }
 }

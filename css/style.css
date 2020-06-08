@@ -1,10 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 ul{
-    margin-top: 80px;
+    list-style-type: none;
 }
 .wheel{
     background-image: url(../photo/wheel.png);

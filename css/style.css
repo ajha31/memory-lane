@@ -36,7 +36,7 @@ ul{
     float: right;
     background-image: url('../photo/truck3.png');
     background-size: 500px 400px;
-    margin-top: 260px;
+    margin-top: 230px;
 } 
 #label{
     width: 286px;
@@ -78,11 +78,9 @@ ul{
     margin-left: 11px;
     background-image: url('../photo/rafu\ \(4\).jpg');
     background-size: 285px 256px;
-    animation-name: image;
-    animation-duration: 100s;
-    animation-iteration-count: 1;
-    animation-delay: 2s;
+    animation: image 100s linear 1 ;
 }
+
 
 @keyframes image{
 

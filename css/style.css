@@ -288,12 +288,12 @@ ul{
         color: white;
         width: 190px;
         height: 180px;
-        
-        position: relative;
-        float: right;
+        position: absolute;
+        bottom: 1vh;
+        margin-left: 185px;
         background-image: url('../photo/truck3.png');
         background-size: 100% 100%;
-        margin-top: 149%;
+        
     } 
     .truck{
         position: absolute;
